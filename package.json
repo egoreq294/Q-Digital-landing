@@ -22,6 +22,7 @@
   "homepage": "https://github.com/egoreq294/Q-Digital-landing#readme",
   "devDependencies": {
     "css-loader": "^4.3.0",
+    "file-loader": "^6.1.1",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",

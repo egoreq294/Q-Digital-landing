@@ -1,0 +1,47 @@
+@import "./font";
+@import "../promo/promo";
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.logo {
+  color: #fff;
+  font-family: "montserratBold";
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.log-in-buttons__log-in,
+.log-in-buttons__sign-up {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "montserratBold";
+  height: auto;
+  padding: 0.55em 1.15em;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.log-in-buttons__log-in {
+  border: 0;
+}
+.log-in-buttons__sign-up {
+  border-radius: 20px;
+  border: solid #fff 2px;
+}
+.button {
+  font-size: 14px;
+  color: #fff;
+  font-family: "montserratBold";
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  height: auto;
+  padding: 0.8em 1.6em;
+  background-color: #ff4e50;
+  border-radius: 25px;
+  border: 0;
+}

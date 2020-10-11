@@ -12,10 +12,23 @@ module.exports = {
          test:/\.(s*)css$/,
          use: [
             miniCss.loader,
-            'css-loader',
+            'css-loader?url=false',
             'sass-loader',
          ]
-      }]
+      },
+      {
+         test: /\.(png|svg|jpe?g|gif)$/,
+         use: [
+             {
+               loader: 'file-loader',
+             },
+         ],
+     },
+     {
+      test: /\.(ttf|woff|woff2|eot|otf)$/,
+      loader: 'file-loader',
+      options: {name: "[name].[ext]"},
+   }]
    },
    plugins: [
       new miniCss({
