@@ -1,0 +1,31 @@
+{
+  "name": "Q-Digital-landing",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoreq294/Q-Digital-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egoreq294/Q-Digital-landing/issues"
+  },
+  "homepage": "https://github.com/egoreq294/Q-Digital-landing#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}
