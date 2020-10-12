@@ -3,7 +3,80 @@
   margin-top: 4.3em;
 }
 .partners__partners-cards {
+  margin-top: 2.1em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.partner-card {
+  position: relative;
+  width: 23%;
+}
+.partner-card__images {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.partners-card__title {
+  font-size: 14px;
+  color: #333333;
+  font-family: "montserratBold";
+  text-align: center;
+  margin-top: 1.3em;
+}
+.partners-card__text {
+  font-size: 14px;
+  color: #666666;
+  font-family: "roboto";
+  text-align: center;
+  margin-top: 1em;
+}
+.partner__after {
+  position: relative;
+}
+
+.partner__after::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: solid #fff 4px;
+  position: absolute;
+  bottom: -4px;
+  right: 42px;
+}
+.partner-card:nth-child(1) .partner__after::before {
+  background-image: url("../src/partners/img/tv-circle.png");
+  background-color: #ff4e50;
+}
+.partner-card:nth-child(2) .partner__after::before {
+  background-image: url("../src/partners/img/tea-circle.png");
+  background-color: #1cd7ad;
+}
+.partner-card:nth-child(3) .partner__after::before {
+  background-image: url("../src/partners/img/kolba-circle.png");
+  background-color: #ffa507;
+}
+.partner-card:nth-child(4) .partner__after::before {
+  background-image: url("../src/partners/img/telegram-circle.png");
+  background-color: #4e73db;
+}
+.partners__button {
+  display: block;
+  margin: 2.5em auto 0 auto;
+  font-size: 14px;
+  color: #ff4e50;
+  font-family: "montserratBold";
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  height: auto;
+  padding: 0.7em 2em;
+  background-color: transparent;
+  border: solid #ff4e50 2px;
+  border-radius: 25px;
 }
