@@ -3,6 +3,7 @@
 @import "../how-it-works/how-it-works";
 @import "../partners/partners";
 @import "../ideas/ideas";
+@import "../search-partners/search-partners";
 * {
   margin: 0;
   padding: 0;
@@ -93,4 +94,11 @@
   font-size: 14px;
   color: #cccccc;
   font-family: "roboto";
+}
+input[type="text"] {
+  font-size: 14px;
+  color: #999999;
+  font-family: "roboto";
+  border: solid #999999 1px;
+  border-radius: 5px;
 }
