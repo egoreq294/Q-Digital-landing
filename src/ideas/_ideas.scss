@@ -2,3 +2,41 @@
 .ideas__title {
   margin-top: 4.3em;
 }
+
+.ideas__photo_small {
+  width: 32%;
+  min-height: 310px;
+}
+.ideas__photo_big {
+  width: 66%;
+  min-height: 310px;
+}
+.ideas__photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+.ideas__photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ideas__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: contrast(1.2) brightness(0.8);
+  border-radius: 5px;
+}
+.ideas__text {
+  font-size: 22px;
+  color: #ffffff;
+  font-family: "montserratBold";
+  text-align: center;
+  z-index: 2;
+}
