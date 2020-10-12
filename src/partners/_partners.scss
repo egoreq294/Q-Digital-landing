@@ -1,4 +1,6 @@
 @import "../scss/font";
+$desktop: 1439px;
+$tablet: 767px;
 .partners__title {
   margin-top: 4.3em;
 }
@@ -7,17 +9,31 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  @media screen and (max-width: $desktop) {
+    justify-content: center;
+  }
 }
 .partner-card {
   position: relative;
   width: 23%;
+  @media screen and (max-width: $desktop) {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: $tablet) {
+    width: auto;
+    margin-bottom: 30px;
+  }
 }
 .partner-card__images {
   max-width: 120px;
   height: auto;
   display: block;
   margin: auto;
-  border-radius: 50%;
 }
 .partners-card__title {
   font-size: 14px;
@@ -32,38 +48,12 @@
   font-family: "roboto";
   text-align: center;
   margin-top: 1em;
+  @media screen and (max-width: $desktop) {
+    padding: 0 25px;
+  }
 }
 .partner__after {
   position: relative;
-}
-
-.partner__after::before {
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  border: solid #fff 4px;
-  position: absolute;
-  bottom: -4px;
-  right: 42px;
-}
-.partner-card:nth-child(1) .partner__after::before {
-  background-image: url("../src/partners/img/tv-circle.png");
-  background-color: #ff4e50;
-}
-.partner-card:nth-child(2) .partner__after::before {
-  background-image: url("../src/partners/img/tea-circle.png");
-  background-color: #1cd7ad;
-}
-.partner-card:nth-child(3) .partner__after::before {
-  background-image: url("../src/partners/img/kolba-circle.png");
-  background-color: #ffa507;
-}
-.partner-card:nth-child(4) .partner__after::before {
-  background-image: url("../src/partners/img/telegram-circle.png");
-  background-color: #4e73db;
 }
 .partners__button {
   display: block;

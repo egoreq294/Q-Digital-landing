@@ -1,6 +1,7 @@
+$desktop: 1439px;
+$tablet: 767px;
 .promo {
   margin: auto;
-  max-width: 1440px;
   position: relative;
 }
 .promo::before {
@@ -11,7 +12,7 @@
   width: 100%;
   height: 100%;
   background-image: url("../src/promo/img/promo-background.png");
-  background-size: auto;
+  background-size: cover;
   background-position: top center;
   filter: contrast(1.2) brightness(0.8);
 }
@@ -20,12 +21,21 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: $desktop) {
+    padding: 0 50px;
+  }
 }
 .header__logo {
   margin: 2.23em 0;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 .header__log-in-buttons {
   margin: 2.35em 0;
+  @media screen and (max-width: $tablet) {
+    margin: 2.35em auto;
+  }
 }
 .promo__content {
   position: relative;
@@ -38,6 +48,7 @@
   font-size: 52px;
   color: #fff;
   font-family: "montserratBold";
+  padding: 0 10px;
 }
 .promo__text {
   margin-top: 1.2em;
@@ -45,6 +56,7 @@
   font-size: 24px;
   color: #fff;
   font-family: "roboto";
+  padding: 0 10px;
 }
 .promo__button {
   display: block;
