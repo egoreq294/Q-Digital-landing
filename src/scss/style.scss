@@ -1,5 +1,7 @@
 @import "./font";
 @import "../promo/promo";
+@import "../how-it-works/how-it-works";
+@import "../partners/partners";
 * {
   margin: 0;
   padding: 0;
@@ -44,4 +46,50 @@
   background-color: #ff4e50;
   border-radius: 25px;
   border: 0;
+}
+.title {
+  font-size: 22px;
+  color: #333333;
+  font-family: "montserratBold";
+  text-align: center;
+}
+.card {
+  position: relative;
+  max-width: 300px;
+  min-height: 400px;
+  background-position: center;
+  background-size: auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+.card__content {
+  z-index: 2;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 20px;
+}
+.card__step {
+  display: inline-block;
+  height: auto;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "montserratRegular";
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  padding: 0.3em 1.3em;
+  margin-bottom: 1.2em;
+}
+.card__title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "montserratBold";
+  margin-bottom: 0.4em;
+}
+.card__text {
+  font-size: 14px;
+  color: #cccccc;
+  font-family: "roboto";
 }

@@ -1,0 +1,9 @@
+@import "../scss/font";
+.partners__title {
+  margin-top: 4.3em;
+}
+.partners__partners-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
