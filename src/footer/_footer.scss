@@ -1,0 +1,55 @@
+@import "../scss/font";
+.footer {
+  margin-top: 6.2em;
+}
+.footer__content {
+  border-top: solid #ff4e50 4px;
+  padding-top: 2.2em;
+}
+.footer__logo {
+  float: left;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ff4e50;
+  font-family: "montserratBold";
+  text-align: center;
+}
+.footer__list {
+  float: left;
+  margin-left: 7em;
+}
+.footer__partners-link {
+  margin-left: 12em;
+  float: left;
+}
+.footer__list li:nth-child(2) {
+  margin-top: 0.7em;
+}
+.footer__link_bold {
+  font-size: 14px;
+  color: #333333;
+  font-family: "montserratBold";
+}
+.footer__link_small {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  font-family: "roboto";
+}
+.footer__text {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #cccccc;
+  font-family: "montserratBold";
+  text-align: end;
+  margin-bottom: 1em;
+}
+.footer__image {
+  float: right;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
