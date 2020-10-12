@@ -1,13 +1,24 @@
 @import "../scss/font";
+$desktop: 1439px;
+$tablet: 767px;
 .footer {
   margin-top: 6.2em;
-}
-.footer__content {
   border-top: solid #ff4e50 4px;
   padding-top: 2.2em;
 }
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  @media screen and (max-width: $desktop) {
+    padding: 0 40px 40px 40px;
+  }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__logo {
-  float: left;
   font-size: 16px;
   letter-spacing: 1px;
   color: #ff4e50;
@@ -15,15 +26,38 @@
   text-align: center;
 }
 .footer__list {
-  float: left;
-  margin-left: 7em;
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+.footer__list li:first-child {
+  width: 100%;
+  text-align: center;
 }
 .footer__partners-link {
-  margin-left: 12em;
-  float: left;
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
+}
+
+.footer__image {
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 .footer__list li:nth-child(2) {
   margin-top: 0.7em;
+  @media screen and (max-width: $tablet) {
+    margin: 0;
+  }
+}
+.footer__list li:not(:first-child) {
+  @media screen and (max-width: $tablet) {
+    margin-top: 10px;
+  }
 }
 .footer__link_bold {
   font-size: 14px;
@@ -43,10 +77,11 @@
   font-family: "montserratBold";
   text-align: end;
   margin-bottom: 1em;
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
 }
-.footer__image {
-  float: right;
-}
+
 a {
   text-decoration: none;
 }

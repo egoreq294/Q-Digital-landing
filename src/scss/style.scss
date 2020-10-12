@@ -5,6 +5,8 @@
 @import "../ideas/ideas";
 @import "../search-partners/search-partners";
 @import "../footer/footer";
+$desktop: 1439px;
+$tablet: 767px;
 * {
   margin: 0;
   padding: 0;
@@ -55,10 +57,11 @@
   color: #333333;
   font-family: "montserratBold";
   text-align: center;
+  padding: 0 10px;
 }
 .card {
   position: relative;
-  max-width: 300px;
+  width: 32%;
   min-height: 400px;
   background-position: center;
   background-size: auto;
