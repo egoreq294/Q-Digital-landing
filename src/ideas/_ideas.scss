@@ -3,6 +3,9 @@ $desktop: 1439px;
 $tablet: 767px;
 .ideas__title {
   margin-top: 4.3em;
+  @media screen and (max-width: $tablet) {
+    margin-top: 1.5em;
+  }
 }
 
 .ideas__photo_small {
@@ -23,6 +26,7 @@ $tablet: 767px;
   }
   @media screen and (max-width: $tablet) {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 .ideas__photo {
@@ -34,7 +38,8 @@ $tablet: 767px;
   overflow: hidden;
   @media screen and (max-width: $tablet) {
     width: auto;
-    min-height: 30vw;
+    min-height: 40vw;
+    margin-top: 10px;
   }
 }
 .ideas__img {

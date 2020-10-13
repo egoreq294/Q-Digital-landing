@@ -5,6 +5,10 @@ $tablet: 767px;
   margin-top: 6.2em;
   border-top: solid #ff4e50 4px;
   padding-top: 2.2em;
+  @media screen and (max-width: $tablet) {
+    margin-top: 2em;
+    padding-top: 2em;
+  }
 }
 .footer__content {
   display: flex;

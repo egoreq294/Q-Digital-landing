@@ -3,6 +3,9 @@ $desktop: 1439px;
 $tablet: 767px;
 .partners__title {
   margin-top: 4.3em;
+  @media screen and (max-width: $tablet) {
+    margin-top: 1.5em;
+  }
 }
 .partners__partners-cards {
   margin-top: 2.1em;
@@ -15,6 +18,7 @@ $tablet: 767px;
   }
   @media screen and (max-width: $desktop) {
     justify-content: center;
+    margin-top: 1em;
   }
 }
 .partner-card {
@@ -51,6 +55,9 @@ $tablet: 767px;
   @media screen and (max-width: $desktop) {
     padding: 0 25px;
   }
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+  }
 }
 .partner__after {
   position: relative;
@@ -69,4 +76,8 @@ $tablet: 767px;
   background-color: transparent;
   border: solid #ff4e50 2px;
   border-radius: 25px;
+  @media screen and (max-width: $tablet) {
+    margin: 0 auto;
+    width: calc(100% - 50px);
+  }
 }

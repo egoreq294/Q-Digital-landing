@@ -68,6 +68,9 @@ $tablet: 767px;
   border-radius: 5px;
   display: flex;
   align-items: flex-end;
+  @media screen and (max-width: $tablet) {
+    min-height: 240px;
+  }
 }
 .card__content {
   z-index: 2;

@@ -3,6 +3,9 @@ $tablet: 767px;
 .promo {
   margin: auto;
   position: relative;
+  @media screen and (max-width: $tablet) {
+    max-height: 540px;
+  }
 }
 .promo::before {
   content: "";
@@ -24,17 +27,22 @@ $tablet: 767px;
   @media screen and (max-width: $desktop) {
     padding: 0 50px;
   }
+  @media screen and (max-width: $tablet) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .header__logo {
   margin: 2.23em 0;
   @media screen and (max-width: $tablet) {
-    display: none;
+    font-size: 20px;
+    margin: 4.7em 0 0 0;
   }
 }
 .header__log-in-buttons {
   margin: 2.35em 0;
   @media screen and (max-width: $tablet) {
-    margin: 2.35em auto;
+    margin: 1.2em 0;
   }
 }
 .promo__content {
@@ -49,6 +57,10 @@ $tablet: 767px;
   color: #fff;
   font-family: "montserratBold";
   padding: 0 10px;
+  @media screen and (max-width: $tablet) {
+    font-size: 30px;
+    margin: 1em auto 0 auto;
+  }
 }
 .promo__text {
   margin-top: 1.2em;
@@ -57,6 +69,10 @@ $tablet: 767px;
   color: #fff;
   font-family: "roboto";
   padding: 0 10px;
+  @media screen and (max-width: $tablet) {
+    font-size: 18px;
+    margin-top: 0.5em;
+  }
 }
 .promo__button {
   display: block;

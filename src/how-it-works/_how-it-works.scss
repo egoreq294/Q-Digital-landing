@@ -11,10 +11,14 @@ $tablet: 767px;
   }
   @media screen and (max-width: $tablet) {
     flex-direction: column;
+    margin-top: 0.4em;
   }
 }
 .how-it-works__title {
   margin-top: 4.3em;
+  @media screen and (max-width: $tablet) {
+    margin-top: 1.5em;
+  }
 }
 
 .card_step1::after,
